@@ -1,0 +1,3 @@
+BEGIN {word_count=0}
+/^an.*an$\n?/ {word_count+=1}
+END {print "number of words both start and end with \"an\": "word_count}
